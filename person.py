@@ -1,3 +1,6 @@
+from pickle import NONE
+
+
 class Person:
 
     name = ''
@@ -7,7 +10,7 @@ class Person:
     # - The default value "John" should be assigned to the name if no argument is passed
 
     def __init__(self, name):
-        if len(name) == 0:
+        if name is None:
             name = "John"
         self.name = name
 
