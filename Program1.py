@@ -1,6 +1,6 @@
 def string_strip(str):
  if len(str) < 2:
-    return 'String is too short!'
+    return 'Your string is too short!'
  return str[0:2] + str[-2:]
 
 

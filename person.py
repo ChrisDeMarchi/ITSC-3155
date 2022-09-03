@@ -1,16 +1,13 @@
-from pickle import NONE
-
-
 class Person:
 
-    name = ''
+    
     # Add the constructor method here
     # - It should take one argument, the name of the person
     # - The name argument should be stored in an attribute called "name"
     # - The default value "John" should be assigned to the name if no argument is passed
 
     def __init__(self, name):
-        if name is None:
+        if len(name) == 0:
             name = "John"
         self.name = name
 

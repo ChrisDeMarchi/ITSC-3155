@@ -2,9 +2,7 @@ import math  # use the math.pi value from this library
 
 
 class Circle:
-    radius = 0.0
-    area = 0.0
-    perimeter = 0.0
+    
 
     # Add the constructor method here
     # - It should take one argument, the radius of the circle
