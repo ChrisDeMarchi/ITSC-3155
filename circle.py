@@ -20,14 +20,14 @@ class Circle:
     # - The area of a circle is calculated using the formula (area = pi * radius^2)
 
     def calculate_area(self):
-        self.area = (math.pi * (self.radius)^2)
+        self.area = ((math.pi) * (self.radius)^2)
 
     # Add a method called "calculate_perimeter" that calculates the perimeter of the circle
     # - The perimeter should be stored in the class's "perimeter" attribute
     # - The perimeter of a circle is calculated using the formula (perimeter = 2 * pi * radius)
 
     def calculate_perimeter(self):
-        self.perimeter = (2 * math.pi * self.radius)
+        self.perimeter = (2 * (math.pi) * self.radius)
 
 
 def main():
@@ -35,8 +35,8 @@ def main():
     while user_radius > 0:
         user_radius = int(input("Enter the radius: "))
         user_circle = Circle(user_radius)
-        # Call the calculate_area method
-        # Call the calculate_perimeter method
+        user_circle.calculate_area()
+        user_circle.calculate_perimeter()
         print("The area of the circle is: ", user_circle.area)
         print("The perimeter of the circle is: ", user_circle.perimeter)
 
