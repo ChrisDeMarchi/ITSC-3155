@@ -1,0 +1,18 @@
+<!--creates a textbox with text 'enter your name' displayed / saves the text box input as text name-input -->
+<input id="name-input" type="text" placeholder="Enter your name" />
+<!-- creates a button called my-button that reads 'click me' -->
+<button id="my-button">Click Me</button>
+
+<script>
+  var myButton = document.querySelector('#my-button');
+
+  var nameInput = document.querySelector('#name-input');
+
+  myButton.addEventListener('click', function () {
+    if (nameInput.value !== '') {
+      alert('Hello ' + nameInput.value);
+    }
+  });
+</script>
+<!-- returns elements from my-button and name-input -->
+<!-- creates an event listener for the button click, if nameInput holds a value return 'Hello ' + nameInput -->

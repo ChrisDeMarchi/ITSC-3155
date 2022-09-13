@@ -1,0 +1,10 @@
+body{
+    background-color: aqua;
+}
+#main-title{
+    font-weight: bold;
+    text-align: center;
+}
+#content{
+    margin-bottom: 12px;
+}
